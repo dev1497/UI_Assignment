@@ -6,6 +6,17 @@
     min-height: 100%;
 }
 
+.navbar-nav .nav-link {
+    color: #FFF;
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
 .navContainer p {
     color: #FFF;
     font-family: Jost;
@@ -31,6 +42,11 @@
 
 }
 
+.moveLeft {
+    text-align: left;
+}
+
+/* about us text */
 .container-fluid p {
     color: #081A2B;
     font-family: Jost;
@@ -39,8 +55,11 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.2px;
+    text-align: left;
+    padding-left: 5%;
 }
 
+/* about us heading */
 .container-fluid h2 {
     color: #081A2B;
     font-family: Jost;
@@ -49,14 +68,20 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.2px;
+    padding: 5%
 }
 
+.img-fluid {
+    padding: 5%
+}
+
+/* learn more, more testimonials button */
 .container-fluid .btn-rectangle {
     border-radius: 0;
-    display: flex;
+    /* display: flex; */
     width: 236px;
     padding: 16px 0px;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     background: #0D89CA;
     color: #FFF;
@@ -69,6 +94,9 @@
     letter-spacing: 0.2px;
 }
 
+
+
+/* leadership,show all button */
 .container-fluid .btn-outline-info {
     border-radius: 0;
     display: flex;
@@ -88,7 +116,8 @@
     letter-spacing: 0.2px;
 }
 
-.display-4 {
+/* offerings heading text */
+.sectionHeading ,.featuredHeading,.newsHeading{
     color: #081A2B;
     font-family: Jost;
     font-size: 48px;
@@ -96,6 +125,8 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.2px;
+    padding-top: 4%;
+    padding-bottom: 2%;
 }
 
 .offerings h3 {
@@ -106,37 +137,80 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.2px;
+    padding-bottom: 2%;
+}
+
+.card-group {
+    display: grid;
+    grid-gap: 4rem;
+    width: 95%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 0 auto;
+
+}
+
+.card,.card1Blog,.card2Blog {
+    color: #081A2B;
+    text-align: center;
+    font-family: Jost;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: 1px 1px 1px 1px;
 }
 
 .card-text {
-    color: #081A2B;
+    color: #001C27;
     text-align: center;
     font-family: Jost;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: normal;
-    letter-spacing: 0.2px;
+    line-height: 20px;
 }
 
 .card-title {
-    color: #081A2B;
-    text-align: center;
-    font-family: Jost;
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.2px;
 }
 
-.servicesContainer button {
-    border-radius: 0;
+/* .indsutriesImgs {
     display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* industries images set */
+.indsutriesImgs img {
+    width: 350px;
+    height: 350px;
+    flex-shrink: 0;
+}
+
+.indsutriesImgs>:first-child {
+    margin-left: 10%;
+}
+
+.indsutriesImgs .industrymid {
+    width: 460px;
+    height: 460px;
+    flex-shrink: 0;
+}
+
+.leftBigArrow,
+.rightBigArrow {
+    font-size: 50px;
+}
+/* offerings View All btn, */
+.servicesContainer button,.testBtn 
+{
+    border-radius: 0;
     width: 236px;
     /* padding: 16px 0px; */
-    flex-direction: column;
-    align-items: center;
     background: #0D89CA;
     color: #FFF;
     text-align: center;
@@ -146,6 +220,21 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.2px;
+    margin-top: 5%;
+    position: relative;
+    left: 44%;
+}
+.testBtn{
+    margin-bottom: 5%;
+}
+/* testimonials CLient says and Video and text */
+.testimonialSection p{
+    color: rgba(8, 26, 43, 0.75);
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
 
 .newsimage-container {
@@ -170,6 +259,27 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.2px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.blogsSection ,.newsSection,.featuredSection{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+
+.blogsSection>div ,.newsSection>div,.featuredSection>div{
+    margin: 10px auto;
+}
+
+.blogsSection>button,.newsSection>button,.featuredSection>button {
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .rounded {
@@ -267,9 +377,6 @@ p {
     color: #FFF;
 }
 
-/* .page-footer h5{
-    color: #FFF;
-} */
 .footer-copyright,
 .footer-copyright a {
     background-color: #001C27;
@@ -286,8 +393,9 @@ p {
     font-weight: bold;
     line-height: normal;
     letter-spacing: 0.2px;
-    padding: 2%;
+    padding: 1%;
 }
+
 /* selecting 2nd p */
 .news p:nth-child(2),
 .featured p:nth-child(2) {
@@ -298,4 +406,61 @@ p {
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navContainer {
+        background-image: url("./resource/handslaptop.jpg");
+        background-size: cover;
+        height: 90vh;
+    }
+
+    .indsutriesImgs img:first-child,
+    .indsutriesImgs img:last-child {
+        display: none;
+    }
+
+    .indsutriesImgs .industrymid {
+        width: 70%;
+        /* Adjust the width as needed */
+        height: 70%;
+        padding-left: 28%;
+    }
+    .servicesContainer button,
+    .testBtn {
+        display: flex;
+        width: 236px;
+        padding: 16px 0px;
+        flex-direction: column;
+        align-items: center;
+        background: #0D89CA;
+        left: 15%
+    }
+    .testimonialSection p:first-child,.testimonialSection p:nth-child(2){
+        display: none;
+    }
+    .card2Blog{
+        display: none;
+    }
+
+    /* .blogsSection .card1Blog{
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    } */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1450px) {
+
+    .indsutriesImgs img:first-child,
+    .indsutriesImgs img:last-child {
+        display: none;
+    }
+
+    .indsutriesImgs .industrymid {
+        width: 70%;
+        /* Adjust the width as needed */
+        height: 70%;
+        padding-left: 28%;
+    }
+
 }

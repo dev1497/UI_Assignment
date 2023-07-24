@@ -8,6 +8,8 @@
     <title>Test Project 8</title>
     <link rel="stylesheet" href="testproject.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     <!-- fonts using Google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,15 +23,16 @@
 <body>
     <!-- navbar section -->
     <div class="navContainer">
-        <nav class="navbar navbar-expand-md navbar-light sticky-top ">
-            <a class="navbar-brand" href="#"><img src="resource/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-md  sticky-top ">
+            <a class="navbar-brand " href="#"><img src="resource/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-target="#navbarResponsive">
+                <!-- <i class="fas fa-bars navbar-toggler-icon" style="color: #ffffff;"></i> -->
+                <i class="fas fa-bars" style="color: #ffffff;"></i>
             </button>
-            <div class="collapse navbar-collapse " id="navbarResponsive">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link " href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Offerings</a>
@@ -57,8 +60,8 @@
             </div>
         </nav>
 
-        <div class="container">
-            <p>How we transform business to unlock value.</p>
+        <div class="container ">
+            <p class="moveLeft">How we transform business to unlock value.</p>
             <div class="col-lg-3 col-md-4 col-sm-8">
                 <button type="button" class="btn btn-rectangle btn-block">
                     Start now
@@ -67,49 +70,54 @@
         </div>
     </div>
     <!-- About Us section -->
-    <div class="container-fluid">
-        <div class="row padding">
-            <div class="col-lg-6">
-                <h2>About Us</h2>
-                <p>New Vision Softcom & Consultancy, is a hard and smart working IT Services Company,
-                    that excels in growing businesses of Small and Medium companies to Enterprise levels,
-                    by way of solving Business pain areas with sound technological solutions. We pride ourselves of
-                    having
-                    delivered successful projects on .NET, Java, Data Analytics, IOT & ERP solutions
-                    for almost every vertical locally and globally.....
-                </p>
-                <br>
-                <div class="d-flex flex-wrap">
-                    <button type="button" class="btn btn-rectangle mr-2">
-                        Learn More
-                    </button>
-                    <button type="button" class="btn btn-outline-info d-none d-md-block">
-                        Leadership
-                    </button>
+    <div class="container-fluid w-100">
+        <div class="container-fluid w-auto">
+            <div class="row padding">
+                <div class="col-lg-6 w-auto">
+                    <h2>About Us</h2>
+                    <p>New Vision Softcom & Consultancy, is a hard and smart working IT Services Company,
+                        that excels in growing businesses of Small and Medium companies to Enterprise levels,
+                        by way of solving Business pain areas with sound technological solutions. We pride ourselves of
+                        having
+                        delivered successful projects on .NET, Java, Data Analytics, IOT & ERP solutions
+                        for almost every vertical locally and globally.....
+                    </p>
+                    <br>
+                    <div class="d-flex flex-wrap p-5">
+                        <button type="button" class="btn btn-rectangle mr-5 ">
+                            Learn More
+                        </button>
+                        <button type="button" class="btn btn-outline-info d-none d-md-block">
+                            Leadership
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6 text-center p-4">
-                <img src="resource/man.jpeg" class="img-fluid">
-                <div class="mt-2 d-lg-none">
-                    <button type="button" class="btn btn-outline-info">
-                        Leadership
-                    </button>
+                <div class="col-lg-6 text-center p-4">
+                    <img src="resource/man.jpeg" class="img-fluid w-auto">
+                    <div class="mt-2 d-lg-none ml-5">
+                        <button type="button" class="btn btn-outline-info">
+                            Leadership
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Offerings section -->
-    <div class="container-fluid padding">
-        <div class="row offerings text-center">
-            <div class="col-12">
-                <h1 class="display-4">Offerings</h1>
-                <h3>Services we offer</h3>
+    <div class="w-auto">
+        <div class="container-fluid padding w-auto">
+            <div class="row offerings text-center">
+                <div class="col-12">
+                    <h1 class="sectionHeading">Offerings</h1>
+                    <h3>Services we offer</h3>
+                </div>
             </div>
         </div>
     </div>
-    <div class="servicesContainer">
+    <div class="servicesContainer ">
         <!-- Card Group -->
         <div class="card-group">
+
             <!-- Card 1 -->
             <div class="card">
                 <img src="resource/oracle.png" class="card-img-top" alt="Card Image 1">
@@ -147,102 +155,115 @@
                 </div>
             </div>
         </div>
+
         <button type="button" class="btn btn-rectangle mr-2">
             View All Services
         </button>
     </div>
+
     <!-- Industries section -->
-    <div class="container-fluid padding">
+    <div class="container-fluid">
         <div class="row offerings text-center">
             <div class="col-12">
-                <h1 class="display-4">Industries</h1>
+                <h1 class="sectionHeading">Industries</h1>
                 <h3>Services we offer</h3>
             </div>
         </div>
-        <!-- Inko thk krna hai abhi ,idhr images ayengi along with arrows -->
-        <div class="d-flex flex-wrap">
-            <img src="resource/touch.jpeg" alt="industries">
-            <img src="resource/touch.jpeg" alt="industries">
-            <img src="resource/touch2.jpeg" alt="industries">
+
+        <div class="indsutriesImgs d-lg-block ">
+            <img src="resource/touch.jpeg" alt="industries" class="img-fluid">
+            <i class="fas fa-arrow-circle-left leftBigArrow" style="color: #a2b8c1;"></i>
+            <img src="resource/industrymid.jpeg" alt="industries" class="industrymid img-fluid">
+            <i class="fas fa-arrow-circle-right rightBigArrow" style="color: #a2b8c1;"></i>
+            <img src="resource/touch2.jpeg" alt="industries" class="img-fluid">
         </div>
     </div>
     <!-- Partners -->
-    <div class="container-fluid padding">
+    <div class="container-fluid padding w-auto">
         <div class="row offerings text-center">
             <div class="col-12">
-                <h1 class="display-4">Partners</h1>
+                <h1 class="sectionHeading">Partners</h1>
                 <h3>At NewVision, strategic partnesrships are one of the core pillars of our business strategy.
                     We have a 360 degree relationship with our partners and our approach is aimed at delivering
                     unparalled value to our clients.
                     Both NewVision and the partners share common set of cultureal values and drive common business
                     onjectives</h3>
-                <img src="resource/partners.png">
+                <img src="resource/partners.png" class="img-fluid">
             </div>
         </div>
     </div>
     <!-- Testimonials -->
-    <div class="container-fluid padding">
+    <div class="container-fluid padding testimonialSection">
         <div class="row offerings text-center">
             <div class="col-12">
-                <h1 class="display-4">Testimonials</h1>
+                <h1 class="sectionHeading">Testimonials</h1>
             </div>
         </div>
-        <div class="d-flex flex-wrap">
+        <div class="d-flex flex-wrap justify-content-center ">
             <div>
                 <p>Client Say's</p>
                 <hr>
             </div>
             <p>Video Testimonials</p>
         </div>
-        <p>Hear it from the Industry Leaders</p>
+        <p class="text-center">Hear it from the Industry Leaders</p>
+
         <!-- -Testimonials  Cards  -->
-        <div class="container-fluid padding">
-            <div class="row padding">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="img/team1.png">
-                        <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">John is enterprenuer. Acha banda hai.</p>
-                            <button href="#" class="btn btn-outline-secondary">See Profile</button>
-                        </div>
+        <div class="container-fluid padding w-auto">
+            <!-- Card Group -->
+            <div class="card-group">
+                <div class="card ">
+                    <img src="resource/client2.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                        <img src="resource/Group 208.png">
+                        <h4 class="card-text ">NewVision provided great service, appropriate architecture and prompt
+                            response to issue at a reasonable rate.
+                            Their team was professional and always had a can-do attitude despite our changing needs and
+                            timelines.
+                            I hughly recommend giving them a try whether you have a POC or major application solution
+                            project on your roadmap.</h4>
                     </div>
-
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="img/team2.png">
-                        <div class="card-body">
-                            <h4 class="card-title">Mary Jo</h4>
-                            <p class="card-text">Mary Jo is enterprenuer. Achi bandi hai.</p>
-                            <button href="#" class="btn btn-outline-secondary">See Profile</button>
-                        </div>
-                    </div>
 
+                <div class="card d-none d-sm-block">
+                    <img src="resource/client2.png" class="card-img-top" alt="Card Image 2">
+                    <div class="card-body">
+                        <img src="resource/Group 208.png">
+                        <h4 class="card-text ">NewVision provided great service, appropriate architecture and prompt
+                            response to issue at a reasonable rate.
+                            Their team was professional and always had a can-do attitude despite our changing needs and
+                            timelines.
+                            I hughly recommend giving them a try whether you have a POC or major application solution
+                            project on your roadmap.</h4>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="img/team3.png">
-                        <div class="card-body">
-                            <h4 class="card-title">Phil Dunphy</h4>
-                            <p class="card-text">Phil Dunphy is enterprenuer. Acha banda hai.</p>
-                            <button href="#" class="btn btn-outline-secondary">See Profile</button>
-                        </div>
-                    </div>
 
+
+                <div class="card d-none d-sm-block">
+                    <img src="resource/client2.png" class="card-img-top" alt="Card Image 3">
+                    <div class="card-body">
+                        <img src="resource/Group 208.png">
+                        <h4 class="card-text ">NewVision provided great service, appropriate architecture and prompt
+                            response to issue at a reasonable rate.
+                            Their team was professional and always had a can-do attitude despite our changing needs and
+                            timelines.
+                            I hughly recommend giving them a try whether you have a POC or major application solution
+                            project on your roadmap.</h4>
+                    </div>
                 </div>
             </div>
         </div>
-        <button type="button" class="btn btn-rectangle mr-2">
+
+        <button type="button" class="btn btn-rectangle mr-2 testBtn">
             More Testimonials
         </button>
     </div>
     <!-- Blogs section -->
-    <div class="container-fluid padding">
-        <div class="d-flex flex-wrap">
+    <div class="container-fluid padding w-auto">
+        <div class="d-flex flex-wrap blogsSection">
             <div class="row offerings text-center">
                 <div class="col-12">
-                    <h1 class="display-4">Blogs</h1>
+                    <h1 class="sectionHeading">Blogs</h1>
                 </div>
             </div>
             <button type="button" class="btn btn-outline-info d-none d-md-block">
@@ -253,9 +274,10 @@
         <div class="container-fluid padding">
             <div class="row padding">
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card1Blog">
                         <img class="card-img-top" src="resource/touch.jpeg">
                         <div class="card-body">
+                            <p>On 12 Aug, 2020</p>
                             <h4 class="card-title">John Doe</h4>
                             <p class="card-text">5 Signs that Your Enterprise Apps Need to be Upgraded and Modernized
                             </p>
@@ -266,9 +288,10 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card2Blog d-none d-sm-block">
                         <img class="card-img-top" src="resource/touch2.jpeg">
                         <div class="card-body">
+                            <p>On 12 Aug, 2020</p>
                             <h4 class="card-title">Mary Jo</h4>
                             <p class="card-text">Importance of Process Discovery in RPA and impact ROI</p>
                             <button type="button" class="btn btn-outline-info d-none d-md-block">
@@ -277,15 +300,23 @@
                         </div>
                     </div>
                 </div>
+                <!-- for smaller screens -->
+                <div class="row">
+                    <div class="col-12 text-center d-block d-sm-none">
+                        <button type="button" class="btn btn-outline-info">
+                            Show All >>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- News section -->
-    <div class="container-fluid padding">
-        <div class="d-flex flex-wrap">
+    <div class="container-fluid padding w-auto">
+        <div class="d-flex flex-wrap newsSection">
             <div class="row offerings text-center">
                 <div class="col-12">
-                    <h1 class="display-4">News</h1>
+                    <h1 class="newsHeading">News</h1>
                 </div>
             </div>
             <button type="button" class="btn btn-outline-info d-none d-md-block">
@@ -309,13 +340,22 @@
                 </div>
             </div>
         </div>
+        <!-- for smaller screens -->
+        <div class="row">
+            <div class="col-12 text-center d-block d-sm-none">
+                <button type="button" class="btn btn-outline-info">
+                    Show All >>
+                </button>
+            </div>
+        </div>
     </div>
+
     <!-- Featured section -->
-    <div class="container-fluid padding">
-        <div class="d-flex flex-wrap">
+    <div class="container-fluid padding w-auto">
+        <div class="d-flex flex-wrap featuredSection">
             <div class="row offerings text-center">
                 <div class="col-12">
-                    <h1 class="display-4">Featured Events</h1>
+                    <h1 class="featuredHeading">Featured Events</h1>
                 </div>
             </div>
             <button type="button" class="btn btn-outline-info d-none d-md-block">
@@ -339,12 +379,21 @@
                 </div>
             </div>
         </div>
+        <!-- for smaller screens -->
+        <div class="row">
+            <div class="col-12 text-center d-block d-sm-none">
+                <button type="button" class="btn btn-outline-info">
+                    Show All >>
+                </button>
+            </div>
+        </div>
     </div>
+
     <!-- Contact Us section -->
-    <div class="container-fluid padding">
+    <div class="container-fluid padding w-auto">
         <div class="row offerings text-center">
             <div class="col-12">
-                <h1 class="display-4">Contact Us</h1>
+                <h1 class="sectionHeading">Contact Us</h1>
                 <h3>Questions ? We will put you on the right path.</h3>
             </div>
         </div>
@@ -378,7 +427,7 @@
             <div class="container mt-5">
                 <div class="d-flex flex-wrap">
                     <div class="location">
-                        <img src="resource/bx_bx-map.png">
+                        <img src="resource/bx_bx-map.png" >
                         <p>602,Pentagon Tower 1,Magarpatla</p>
                         <p>City,Hadapsar,Pune India</p>
                     </div>
@@ -391,7 +440,7 @@
                         <p>contact@newvisionsoftware.in</p>
                     </div>
                 </div>
-                <img src="resource/map.png">
+                <img src="resource/map.png" class="img-fluid  d-lg-block">
                 <div class="d-flex flex-wrap">
                     <img src="resource/ant-design_twitter-outlined.png">
                     <img src="resource/ant-design_facebook-filled.png">
@@ -405,10 +454,11 @@
         <div class="container text-center text-md-left">
             <div class="row">
                 <div class="col-md-3 mx-auto">
-                    <!-- <i class="fa-solid fa-caret-down" style="color: #ffffff;"></i>  for mobile icon not working-->
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerDropdown1"
                         aria-controls="footerDropdown1" aria-expanded="false" aria-label="Toggle navigation">
-                        <h5 class="font-weight-bold mt-3 mb-4 ">Our Offerings</h5>
+                        <h5 class="font-weight-bold mt-3 mb-4 ">Our Offerings <i class="fas fa-caret-down"
+                                style="color: #ffffff;"></i> </h5>
                     </button>
                     <!-- d-md-block shows list on larger screens and makes it collapsible on smaller -->
                     <div class="collapse navbar-collapse d-md-block" id="footerDropdown1">
@@ -439,7 +489,8 @@
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerDropdown2"
                         aria-controls="footerDropdown2" aria-expanded="false" aria-label="Toggle navigation">
-                        <h5 class="font-weight-bold  mt-3 mb-4">Industries</h5>
+                        <h5 class="font-weight-bold  mt-3 mb-4">Industries <i class="fas fa-caret-down"
+                                style="color: #ffffff;"></i> </h5>
                     </button>
                     <div class="collapse navbar-collapse d-md-block" id="footerDropdown2">
                         <ul class="list-unstyled">
@@ -469,7 +520,8 @@
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerDropdown3"
                         aria-controls="footerDropdown3" aria-expanded="false" aria-label="Toggle navigation">
-                        <h5 class="font-weight-bold  mt-3 mb-4">Resources</h5>
+                        <h5 class="font-weight-bold  mt-3 mb-4">Resources <i class="fas fa-caret-down"
+                                style="color: #ffffff;"></i> </h5>
                     </button>
 
                     <div class="collapse navbar-collapse d-md-block" id="footerDropdown3">
@@ -496,7 +548,8 @@
                 <div class="col-md-3 mx-auto">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerDropdown4"
                         aria-controls="footerDropdown4" aria-expanded="false" aria-label="Toggle navigation">
-                        <h5 class="font-weight-bold mt-3 mb-4">Company</h5>
+                        <h5 class="font-weight-bold mt-3 mb-4">Company <i class="fas fa-caret-down"
+                                style="color: #ffffff;"></i> </h5>
                     </button>
                     <div class="collapse navbar-collapse d-md-block" id="footerDropdown4">
                         <ul class="list-unstyled">
@@ -523,7 +576,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="/"> 2021 - New Vision Softcom & Consultancy Pvt. Ltd</a>
+            <a href="#!"> 2021 - New Vision Softcom & Consultancy Pvt. Ltd</a>
         </div>
     </footer>
 </body>
