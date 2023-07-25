@@ -16,28 +16,30 @@
     letter-spacing: 0.2px;
 }
 
-.navContainer p {
+.navContainer .navTextBtn h1 {
     color: #FFF;
     font-family: Jost;
-    font-size: 74px;
+    align-items: center;
+    /* font-size: 74px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.2px; */
 }
 
-.navContainer .btn-rectangle {
+.navContainer .btn-primary {
+    align-items: center;
     border-radius: 0;
     padding: 10px 20px;
     background-color: #CEA93A;
     color: #FFF;
-    text-align: center;
+    /* text-align: center;
     font-family: Jost;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.2px; */
 
 }
 
@@ -116,7 +118,9 @@
 }
 
 /* offerings heading text */
-.sectionHeading ,.featuredHeading,.newsHeading{
+.sectionHeading,
+.featuredHeading,
+.newsHeading {
     color: #081A2B;
     font-family: Jost;
     font-size: 48px;
@@ -148,7 +152,9 @@
 
 }
 
-.card,.card1Blog,.card2Blog {
+.card,
+.card1Blog,
+.card2Blog {
     color: #081A2B;
     text-align: center;
     font-family: Jost;
@@ -204,9 +210,10 @@
 .rightBigArrow {
     font-size: 50px;
 }
+
 /* offerings View All btn, */
-.servicesContainer button,.testBtn 
-{
+.servicesContainer button,
+.testBtn {
     border-radius: 0;
     width: 236px;
     /* padding: 16px 0px; */
@@ -223,11 +230,13 @@
     position: relative;
     left: 44%;
 }
-.testBtn{
+
+.testBtn {
     margin-bottom: 5%;
 }
+
 /* testimonials CLient says and Video and text */
-.testimonialSection p{
+.testimonialSection p {
     color: rgba(8, 26, 43, 0.75);
     font-family: Jost;
     font-size: 20px;
@@ -244,9 +253,9 @@
 
 .newsimage-container img {
     max-width: 300px;
-  
+
     margin-right: 20px;
-   
+
 }
 
 .text-container {
@@ -264,18 +273,24 @@
     text-align: center;
 }
 
-.blogsSection ,.newsSection,.featuredSection{
+.blogsSection,
+.newsSection,
+.featuredSection {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 
 }
 
-.blogsSection>div ,.newsSection>div,.featuredSection>div{
+.blogsSection>div,
+.newsSection>div,
+.featuredSection>div {
     margin: 10px auto;
 }
 
-.blogsSection>button,.newsSection>button,.featuredSection>button {
+.blogsSection>button,
+.newsSection>button,
+.featuredSection>button {
     margin-right: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -304,7 +319,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
-   
+
     letter-spacing: 0.1px;
 }
 
@@ -324,7 +339,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
-   
+
     letter-spacing: 0.1px;
 }
 
@@ -411,7 +426,7 @@ p {
     .navContainer {
         background-image: url("./resource/handslaptop.jpg");
         background-size: cover;
-        height: 90vh;
+        height: 110vh;
     }
 
     .indsutriesImgs img:first-child,
@@ -421,10 +436,11 @@ p {
 
     .indsutriesImgs .industrymid {
         width: 70%;
-      
+
         height: 70%;
         padding-left: 28%;
     }
+
     .servicesContainer button,
     .testBtn {
         display: flex;
@@ -435,10 +451,13 @@ p {
         background: #0D89CA;
         left: 15%
     }
-    .testimonialSection p:first-child,.testimonialSection p:nth-child(2){
+
+    .testimonialSection p:first-child,
+    .testimonialSection p:nth-child(2) {
         display: none;
     }
-    .card2Blog{
+
+    .card2Blog {
         display: none;
     }
 }
