@@ -2,8 +2,7 @@
     background-image: url("./resource/handslaptop.jpg");
     background-size: cover;
     height: 70vh;
-    /* Workaround for some mobile browsers */
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 
 .navbar-nav .nav-link {
@@ -245,9 +244,9 @@
 
 .newsimage-container img {
     max-width: 300px;
-    /* Adjust this to your desired image width */
+  
     margin-right: 20px;
-    /* Adjust this for spacing between image and text */
+   
 }
 
 .text-container {
@@ -305,7 +304,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
-    /* 140% */
+   
     letter-spacing: 0.1px;
 }
 
@@ -325,7 +324,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    /* 106.667% */
+   
     letter-spacing: 0.1px;
 }
 
@@ -422,7 +421,7 @@ p {
 
     .indsutriesImgs .industrymid {
         width: 70%;
-        /* Adjust the width as needed */
+      
         height: 70%;
         padding-left: 28%;
     }
@@ -442,11 +441,6 @@ p {
     .card2Blog{
         display: none;
     }
-
-    /* .blogsSection .card1Blog{
-        padding-bottom: 5%;
-        margin-bottom: 5%;
-    } */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1450px) {
