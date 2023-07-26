@@ -1,8 +1,13 @@
 .navContainer {
-    background-image: url("./resource/handslaptop.jpg");
+    background-image: url("./resource/back.jpeg");
+
     background-size: cover;
-    height: 70vh;
-    /* min-height: 100%; */
+    height: 90vh;
+}
+
+.navbar-nav {
+    display: grid;
+    grid-gap: 10%;
 }
 
 .navbar-nav .nav-link {
@@ -14,41 +19,29 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.2px;
+
 }
 
 .navContainer .navTextBtn h1 {
     color: #FFF;
     font-family: Jost;
-    align-items: center;
-    /* font-size: 74px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.2px; */
+    font-size: 65px;
 }
 
 .navContainer .btn-primary {
-    align-items: center;
     border-radius: 0;
     padding: 10px 20px;
     background-color: #CEA93A;
     color: #FFF;
-    /* text-align: center;
     font-family: Jost;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.2px; */
-
-}
-
-.moveLeft {
-    text-align: left;
+    line-height: 29px;
+    letter-spacing: 0.20000000298023224px;
 }
 
 /* about us text */
-.container-fluid p {
+.aboutUs p {
     color: #081A2B;
     font-family: Jost;
     font-size: 24px;
@@ -61,7 +54,7 @@
 }
 
 /* about us heading */
-.container-fluid h2 {
+.aboutUs h2 {
     color: #081A2B;
     font-family: Jost;
     font-size: 48px;
@@ -72,12 +65,13 @@
     padding: 5%
 }
 
-.img-fluid {
+.aboutUs img {
     padding: 5%
 }
 
 /* learn more, more testimonials button */
-.container-fluid .btn-rectangle {
+.aboutUs .btn-rectangle,
+.testimonialSection .btn-rectangle {
     border-radius: 0;
     /* display: flex; */
     width: 236px;
@@ -152,20 +146,6 @@
 
 }
 
-.card,
-.card1Blog,
-.card2Blog {
-    color: #081A2B;
-    text-align: center;
-    font-family: Jost;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.2px;
-    border-width: 2px;
-    border-color: black;
-    box-shadow: 1px 1px 1px 1px;
-}
-
 .card-text {
     color: #001C27;
     text-align: center;
@@ -183,11 +163,41 @@
     letter-spacing: 0.2px;
 }
 
-/* .indsutriesImgs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+.card,
+.card1Blog,
+.card2Blog {
+    color: #081A2B;
+    text-align: center;
+    font-family: Jost;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.card1Blog button,
+.card2Blog button {
+   justify-content: center;
+
+}
+
+.servicesContainer .card-group {
+    background: rgba(162, 184, 193, 0.05);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.servicesContainer .card-text {
+    color: #081A2B;
+    text-align: center;
+    font-family: Jost;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
 
 /* industries images set */
 .indsutriesImgs img {
@@ -206,12 +216,20 @@
     flex-shrink: 0;
 }
 
-.leftBigArrow,
-.rightBigArrow {
-    font-size: 50px;
+.indsutriesImgs>:nth-child(2),
+.indsutriesImgs>:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 1;
 }
 
-/* offerings View All btn, */
+.indsutriesImgs img:first-child,
+.indsutriesImgs .industrymid,
+.indsutriesImgs img:last-child {
+    filter: brightness(50%);
+}
+
+/* offerings View All btn,testimonaials More btn */
 .servicesContainer button,
 .testBtn {
     border-radius: 0;
@@ -243,6 +261,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    padding: 1%;
 }
 
 .newsimage-container {
@@ -253,14 +272,35 @@
 
 .newsimage-container img {
     max-width: 300px;
-
     margin-right: 20px;
+}
 
+.newsimage-container p:first-child {
+    text-align: left;
+    color: #081A2B;
+    font-family: Jost;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    padding: 1%;
+}
+
+/* selecting 2nd p */
+.newsimage-container p:nth-child(2) {
+    font-family: Jost;
+    font-style: normal;
+    font-size: 30px;
+    /* font-weight: 400; */
+    line-height: 52px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    padding: 1%;
 }
 
 .text-container {
     flex: 1;
-    color: #14b82f;
     font-family: Jost;
     font-size: 36px;
     font-style: normal;
@@ -269,8 +309,32 @@
     letter-spacing: 0.2px;
 }
 
-.textCenter {
+.dateContainer {
+    display: flex;
+    align-items: center;
+}
+
+.dateContainer pre {
+    color: #A88427;
     text-align: center;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.contactQs {
+    color: var(--second-text, #374754);
+    text-align: center;
+    font-family: Jost;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 142.857% */
+    letter-spacing: 0.2px;
 }
 
 .blogsSection,
@@ -296,6 +360,42 @@
     margin-bottom: 10px;
 }
 
+.clientContainer .card {
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0px 0px 10px 0px rgba(162, 184, 193, 0.50);
+    width: 400px;
+    height: 500px;
+    flex-shrink: 0;
+}
+
+.small-round-image{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+.small-round-image2,.small-round-image3 {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+}
+
+.color {
+    color: #CEA93A;
+    position: relative;
+    padding-left: 30px;
+}
+
+.color1 {
+    color: #001C27;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.custom-bg {
+    background: #A2B8C1;
+}
+/* form contact us */
 .rounded {
     border-radius: 15px;
     display: flex;
@@ -323,10 +423,18 @@
     letter-spacing: 0.1px;
 }
 
+/* form {
+    width: 100%;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  } */
 #name,
 #email {
     display: flex;
-    padding: 19px 20px;
+    padding: 20px 91px;
     flex-direction: column;
     align-items: flex-start;
     gap: 47px;
@@ -397,34 +505,11 @@ p {
     color: #FFF;
 }
 
-.news p,
-.featured p {
-    text-align: left;
-    color: #081A2B;
-    font-family: Jost;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    letter-spacing: 0.2px;
-    padding: 1%;
-}
 
-/* selecting 2nd p */
-.news p:nth-child(2),
-.featured p:nth-child(2) {
-    color: #081A2B;
-    font-family: Jost;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 0.2px;
-}
 
 @media only screen and (max-width: 768px) {
     .navContainer {
-        background-image: url("./resource/handslaptop.jpg");
+        background-image: url("./resource/back.jpeg");
         background-size: cover;
         height: 110vh;
     }
@@ -460,6 +545,12 @@ p {
     .card2Blog {
         display: none;
     }
+
+    .navContainer .navTextBtn h1 {
+        color: #FFF;
+        font-family: Jost;
+        font-size: 45px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1450px) {
@@ -471,9 +562,48 @@ p {
 
     .indsutriesImgs .industrymid {
         width: 70%;
-        /* Adjust the width as needed */
         height: 70%;
         padding-left: 28%;
     }
 
 }
+
+@media only screen and (min-width: 1005px) and (max-width: 1442px) {
+    .navbar-nav {
+        display: none;
+        grid-gap: 1%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1005px) {
+    .navbar-nav {
+        display: none;
+        grid-gap: 0%;
+    }
+
+    .navContainer .navTextBtn h1 {
+        color: #FFF;
+        font-family: Jost;
+        font-size: 45px;
+    }
+}
+
+@media only screen and (min-width: 230px) and (max-width: 575px) {
+    .navContainer .btn-primary {
+        border-radius: 0;
+        padding: 10px 20px;
+        background-color: #CEA93A;
+        color: #FFF;
+        font-family: Jost;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0.20000000298023224px;
+        width: 152px;
+        height: 52px;
+        top: 419px;
+        left: 15px;
+    }
+
+}
+

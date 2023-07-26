@@ -8,6 +8,7 @@
     <title>Test Project 8</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <!-- fonts using Google fonts -->
@@ -23,19 +24,21 @@
 <body>
     <!-- navbar section -->
     <div class="navContainer">
-        <nav class="navbar navbar-expand-md  sticky-top  ">
-            <div>
-                <a class="navbar-brand " href="#"><img src="resource/logo.png" class="img-fluid logo"></a>
-            </div>
+        <nav class="navbar navbar-expand-md sticky-top px-3 py-3">
+            <div class="nav1">
+                <a class="navbar-brand " href="#">
+                    <img src="resource/logo.png" class="img-fluid">
+                </a>
+            </div class="nav2">
             <div>
                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <!-- <i class="fas fa-bars navbar-toggler-icon" style="color: #ffffff;"></i> -->
                     <i class="fas fa-bars" style="color: #ffffff;"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item active">
-                            <a class="nav-link " href="#">Home</a>
+                <div class="collapse navbar-collapse " id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Offerings</a>
@@ -63,25 +66,26 @@
                 </div>
             </div>
         </nav>
-
         <div class="container-fluid navTextBtn">
-            <h1 class="text-center">How we transform business to unlock value.</h1>
-            <div class="container">
-                <div class="row justify-content-md-center text-center">
-                    <div class="col-md-auto col-sm-12 col-12 mb-3">
-                        <button class="btn btn-primary btn-block"> Start now</button>
-                    </div>
+            <div class="row">
+                <div class="col-md-auto col-sm-12  col-xm-2 col-12 mb-5">
+                    <h1 class="ml-5 pl-5 mt-5">How we transform business </h1>
+                    <h1 class="ml-5 pl-5">to unlock value.</h1>
                 </div>
             </div>
-            <!-- <div class="col-lg-3 col-md-4 col-sm-8">
-            <button type="button" class="btn btn-rectangle btn-block text-center">
-                Start now
-            </button>
-        </div> -->
         </div>
+        <div class="container-fluid">
+            <div class="row mt-5 ml-5">
+                <div class="col-sm-3 col-lg-2 mt-5 mb-3 ml-5">
+                    <button class="btn btn-primary btn-block "> Start now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
     </div>
     <!-- About Us section -->
-    <div class="container-fluid w-100">
+    <div class="container-fluid w-100 aboutUs" id="aboutUs">
         <div class="container-fluid w-auto">
             <div class="row padding">
                 <div class="col-lg-6 w-auto">
@@ -125,52 +129,54 @@
             </div>
         </div>
     </div>
-    <div class="servicesContainer ">
-        <!-- Card Group -->
-        <div class="card-group">
 
-            <!-- Card 1 -->
-            <div class="card">
-                <img src="resource/oracle.png" class="card-img-top" alt="Card Image 1">
-                <div class="card-body">
-                    <h5 class="card-title">Oracle Utilies</h5>
-                    <p class="card-text">Customer to Meter(C2M),Customer Care and Bolling(CC&B), Meter Data
-                        Management(MDM),Field Service(OFS),Ananlytics(OUA)</p>
+    <div class="p-5">
+        <div class="servicesContainer">
+            <!-- Card Group -->
+            <div class="row ">
+                <!-- Card 1 -->
+                <div class="card col-lg-3 col-md-6 col-sm-6 p-1">
+                    <img src="resource/image 46.png" class="card-img-top img-fluid" alt="Card Image 1">
+                    <div class="card-body">
+                        <h4 class="card-title">Oracle Utilities</h4>
+                        <p class="card-text ">Customer to Meter(C2M),Customer Care and Bolling(CC&B), Meter Data
+                            Management(MDM),Field Service(OFS),Ananlytics(OUA)</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card col-lg-3 col-md-6 col-sm-6 p-1">
+                    <img src="resource/image 47.png" class="card-img-top img-fluid" alt="Card Image 2">
+                    <div class="card-body">
+                        <h4 class="card-title">Cloud </h4>
+                        <p class="card-text">Microsoft Azure, AWS</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card col-lg-3 col-md-6 col-sm-6 p-1">
+                    <img src="resource/image 48.png" class="card-img-top img-fluid" alt="Card Image 3">
+                    <div class="card-body">
+                        <h4 class="card-title">Business Process Management</h4>
+                        <p class="card-text">Salesforce, PEGA, Robomagic & UI Path</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card col-lg-3 col-md-6 col-sm-6 p-1">
+                    <img src="resource/image 48.png" class="card-img-top img-fluid" alt="Card Image 4">
+                    <div class="card-body">
+                        <h4 class="card-title">Enterprise Resource Planning </h4>
+                        <p class="card-text">Oracle EBS, JD Edwards, NetSuite, ODOO, SAP</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="card">
-                <img src="resource/cloud.png" class="card-img-top" alt="Card Image 2">
-                <div class="card-body">
-                    <h5 class="card-title">Cloud </h5>
-                    <p class="card-text">Microsoft Azure, AWS</p>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card">
-                <img src="resource/businessprojectname.png" class="card-img-top" alt="Card Image 3">
-                <div class="card-body">
-                    <h5 class="card-title">Business Process Management</h5>
-                    <p class="card-text">Salesforce, PEGA, Robomagic & UI Path</p>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="card">
-                <img src="resource/enterprise.png" class="card-img-top" alt="Card Image 4">
-                <div class="card-body">
-                    <h5 class="card-title">Enterprise Resource Planning </h5>
-                    <p class="card-text">Orcale EBS, JD Edwards, NetSuite, ODOO, SAP</p>
-                </div>
-            </div>
+            <button type="button" class="btn btn-rectangle mr-2">
+                View All Services
+            </button>
         </div>
-
-        <button type="button" class="btn btn-rectangle mr-2">
-            View All Services
-        </button>
     </div>
+
 
     <!-- Industries section -->
     <div class="container-fluid">
@@ -182,11 +188,13 @@
         </div>
 
         <div class="indsutriesImgs d-lg-block ">
-            <img src="resource/touch.jpeg" alt="industries" class="img-fluid">
-            <i class="fas fa-arrow-circle-left leftBigArrow" style="color: #a2b8c1;"></i>
-            <img src="resource/industrymid.jpeg" alt="industries" class="industrymid img-fluid">
-            <i class="fas fa-arrow-circle-right rightBigArrow" style="color: #a2b8c1;"></i>
-            <img src="resource/touch2.jpeg" alt="industries" class="img-fluid">
+            <img src="resource/touchtext.jpg" alt="industries" class="img-fluid">
+            <img src="resource/Group 276.png">
+            <!-- <i class="fas fa-arrow-circle-left leftBigArrow" style="color: #a2b8c1;"></i> -->
+            <img src="resource/industrymidtext.jpg" alt="industries" class="industrymid img-fluid">
+            <!-- <i class="fas fa-arrow-circle-right rightBigArrow" style="color: #a2b8c1;"></i> -->
+            <img src="resource/Group 275.png">
+            <img src="resource/touch2text.jpg" alt="industries" class="img-fluid">
         </div>
     </div>
     <!-- Partners -->
@@ -220,50 +228,118 @@
         <p class="text-center">Hear it from the Industry Leaders</p>
 
         <!-- -Testimonials  Cards  -->
-        <div class="container-fluid padding w-auto">
+         <!-- copy contact us -->
+    <div class="p-5">
+        <div class="clientContainer">
             <!-- Card Group -->
-            <div class="card-group">
-                <div class="card ">
-                    <img src="resource/client2.png" class="card-img-top" alt="Card Image 1">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="card col-lg-4 col-sm-12 p-1 ">
                     <div class="card-body">
-                        <img src="resource/Group 208.png">
+
+                        <div class="mb-2 color">
+                            <i class="fas fa-quote-left fa-2x color1"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+
                         <h4 class="card-text ">NewVision provided great service, appropriate architecture and prompt
                             response to issue at a reasonable rate.
                             Their team was professional and always had a can-do attitude despite our changing needs and
                             timelines.
                             I hughly recommend giving them a try whether you have a POC or major application solution
                             project on your roadmap.</h4>
+                        <div class="custom-bg container-fluid">
+                            <img src="resource/client1.jpeg" class="img-fluid small-round-image" alt="Card Image 1">
+                            <p class="card-text ">CIO, U.S.Based Corporate Wellness Company</p>
+
+                            <div class="mt-2">
+                                <i class="fab fa-twitter fa-2x p-2" style="color:white"></i>
+                                <i class="fab fa-facebook fa-2x p-2" style="color:white"></i>
+                                <i class="fab fa-linkedin fa-2x p-2 " style="color:white"></i>
+                                <i class="fab fa-youtube fa-2x p-2" style="color:white"></i>
+                                <i class="fab fa-instagram fa-2x p-2" style="color:white"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card d-none d-sm-block">
-                    <img src="resource/client2.png" class="card-img-top" alt="Card Image 2">
+                <!-- Card 2 -->
+                <div class="card col-lg-4 col-sm-12 p-1 d-none d-sm-block">
                     <div class="card-body">
-                        <img src="resource/Group 208.png">
+                        <div class="mb-2 color">
+                            <i class="fas fa-quote-left fa-2x color1"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+
                         <h4 class="card-text ">NewVision provided great service, appropriate architecture and prompt
                             response to issue at a reasonable rate.
                             Their team was professional and always had a can-do attitude despite our changing needs and
                             timelines.
                             I hughly recommend giving them a try whether you have a POC or major application solution
                             project on your roadmap.</h4>
+
+                        <div class="custom-bg container-fluid">
+                            <img src="resource/client2.png" class="img-fluid small-round-image2" alt="Card Image 2">
+                            <p class="card-text">COO, The Baker, Saudi Arabia</p>
+
+                            <div class="mt-2">
+                                <i class="fab fa-twitter fa-2x p-2" style="color:white"></i>
+                                <i class="fab fa-facebook fa-2x p-2" style="color:white"></i>
+                                <i class="fab fa-linkedin fa-2x p-2 " style="color:white"></i>
+                                <i class="fab fa-youtube fa-2x p-2" style="color:white"></i>
+                                <i class="fab fa-instagram fa-2x p-2" style="color:white"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-
-                <div class="card d-none d-sm-block">
-                    <img src="resource/client2.png" class="card-img-top" alt="Card Image 3">
+                <!-- Card 3 -->
+                <div class="card col-lg-4 col-sm-12 p-1 d-none d-sm-block">
                     <div class="card-body">
-                        <img src="resource/Group 208.png">
+
+                        <div class="mb-2 color">
+                            <i class="fas fa-quote-left fa-2x color1"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
                         <h4 class="card-text ">NewVision provided great service, appropriate architecture and prompt
                             response to issue at a reasonable rate.
                             Their team was professional and always had a can-do attitude despite our changing needs and
                             timelines.
                             I hughly recommend giving them a try whether you have a POC or major application solution
                             project on your roadmap.</h4>
+                        <div class="custom-bg container-fluid">
+                            <img src="resource/client3.jpeg" class="img-fluid small-round-image3" alt="Card Image 3">
+                            <p class="card-text">CEO, Rajgreen Group</p>
+                            <div class="mt-2">
+                                <i class="fab fa-twitter fa-2x p-2" style="color:white"></i>
+                                <i class="fab fa-facebook fa-2x p-2" style="color:white"></i>
+                                <i class="fab fa-linkedin fa-2x p-2 " style="color:white"></i>
+                                <i class="fab fa-youtube fa-2x p-2" style="color:white"></i>
+                                <i class="fab fa-instagram fa-2x p-2" style="color:white"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
         <button type="button" class="btn btn-rectangle mr-2 testBtn">
             More Testimonials
@@ -288,10 +364,11 @@
                     <div class="card1Blog">
                         <img class="card-img-top" src="resource/touch.jpeg">
                         <div class="card-body">
-                            <p>On 12 Aug, 2020</p>
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">5 Signs that Your Enterprise Apps Need to be Upgraded and Modernized
-                            </p>
+                            <div class="dateContainer">
+                                <pre>        On 12 Aug, 2020                                                6 min read</pre>
+                            </div>
+                            <h4 class="card-title">5 Signs that Your Enterprise Apps Need to be Upgraded and Modernized
+                            </h4>
                             <button type="button" class="btn btn-outline-info d-none d-md-block">
                                 Read More
                             </button>
@@ -302,10 +379,11 @@
                     <div class="card2Blog d-none d-sm-block">
                         <img class="card-img-top" src="resource/touch2.jpeg">
                         <div class="card-body">
-                            <p>On 12 Aug, 2020</p>
-                            <h4 class="card-title">Mary Jo</h4>
-                            <p class="card-text">Importance of Process Discovery in RPA and impact ROI</p>
-                            <button type="button" class="btn btn-outline-info d-none d-md-block">
+                            <div class="dateContainer">
+                                <pre>        On 12 Aug, 2020                                                6 min read</pre>
+                            </div>
+                            <h4 class="card-title">Importance of Process Discovery in RPA and impact ROI</h4>
+                            <button type="button" class="btn btn-outline-info d-none d-md-block ">
                                 Read More
                             </button>
                         </div>
@@ -335,14 +413,14 @@
             </button>
         </div>
         <div class="container-fluid padding">
-            <div class="newsimage-container news">
+            <div class="newsimage-container">
                 <img class="card-img-top" src="resource/laptop.jpeg" alt="Laptop Image">
                 <div class="text-container">
                     <p>NewVisions continues hiring even during the pandemic due to increased repeat business</p>
                     <p>10 September, 2021</p>
                 </div>
             </div>
-            <div class="newsimage-container news">
+            <div class="newsimage-container">
                 <img class="card-img-top" src="resource/lock.jpeg" alt="Laptop Image">
                 <div class="text-container">
                     <p>NewVision successfully completed delivery of Oracle Utilities Solution for a major international
@@ -374,15 +452,15 @@
             </button>
         </div>
         <div class="container-fluid padding">
-            <div class="newsimage-container featured">
+            <div class="newsimage-container">
                 <img class="card-img-top" src="resource/featured1.jpeg" alt="Laptop Image">
                 <div class="text-container">
                     <p>Comprehensive Healthcare Management for insurance & healthcare industries on PEGA Decision Hub
                     </p>
-                    <p>23 September, 2021</p>
+                    <p class="fw-lighter">23 September, 2021</p>
                 </div>
             </div>
-            <div class="newsimage-container featured">
+            <div class="newsimage-container">
                 <img class="card-img-top" src="resource/featured2.jpeg" alt="Laptop Image">
                 <div class="text-container">
                     <p>Webinar - Transforming Utilities (Water, Gas , Power) with RPA (Robotic Process Automation)</p>
@@ -399,9 +477,84 @@
             </div>
         </div>
     </div>
+    <!--  contact us -->
+    <div class="container mt-5">
+        <div class="container-fluid">
+            <div class="container ">
+                <h2 class="text-center mb-4 sectionHeading">Contact Us</h2>
+                <h3 class="text-center contactQs">Questions ? We will put you on the right path.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!-- First Column: Contact Form -->
+            <div class="col-md-6 mt-5">
+                <form class="rounded p-4 border p-4 rounded">
+                    <h4 class="text-center fw-bold p-3">Contact Us</h4>
+                    <div class="form-group mt-4">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your email" required>
+                    </div>
+
+                    <div class="form-group ">
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your message"
+                            required></textarea>
+                    </div>
+
+                    <div class="mt-5">
+                        <button type="button" id="formbtn" class="btn btn-rectangle mr-2 btn-primary px-5">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Second Column: Icons and Text -->
+            <div class="col-md-6 mt-3">
+
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 d-flex flex-column align-items-center">
+                            <!-- Location Info -->
+                            <i class="fas fa-map-marker-alt fa-1x" style="color:blue"></i>
+                            <div class="ml-2">
+                                <p>602, Pentagon Tower 1, Magarpatta</p>
+                                <p>City, Hadapsar, Pune, India</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-flex flex-column align-items-center">
+                            <!-- Phone Info -->
+                            <i class="fas fa-phone-alt fa-1x" style="color:blue"></i>
+                            <p class="mt-2">+91 8956001836</p>
+                        </div>
+
+                        <div class="col-md-4 d-flex flex-column align-items-center">
+                            <!-- Email Info -->
+                            <i class="fas fa-envelope fa-1x" style="color:blue"></i>
+                            <p class="mt-2">contact@newvisionso</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Map Image (You can leave this as is, since it's not an icon) -->
+                <img src="resource/map.png" class="img-fluid d-lg-block" alt="Map Image">
+
+                <!-- Social Media Icons -->
+                <div class="d-flex flex-wrap">
+                    <i class="fab fa-twitter fa-2x p-2" style="color:blue"></i>
+                    <i class="fab fa-facebook fa-2x p-2" style="color:blue"></i>
+                    <i class="fab fa-linkedin fa-2x p-2 " style="color:blue"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Contact Us section -->
-    <div class="container-fluid padding w-auto">
+    <!-- <div class="container-fluid padding w-auto">
         <div class="row offerings text-center">
             <div class="col-12">
                 <h1 class="sectionHeading">Contact Us</h1>
@@ -459,7 +612,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Footer -->
     <footer class="page-footer font-small">
         <div class="container text-center text-md-left">
