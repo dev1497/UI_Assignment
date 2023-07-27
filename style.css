@@ -120,9 +120,13 @@
 }
 
 /* offerings heading text */
-.sectionHeading,
+.offeringHeading,
+.testimonialHeading,
+.blogHeading,
+.newsHeading,
 .featuredHeading,
-.newsHeading {
+.contactHeading,
+.partnerHeading {
     color: #081A2B;
     font-family: Jost;
     font-size: 48px;
@@ -147,11 +151,10 @@
 
 .card-group {
     display: grid;
-    grid-gap: 4rem;
+    grid-gap: 1rem;
     width: 95%;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     margin: 0 auto;
-
 }
 
 .card-text {
@@ -194,6 +197,13 @@
 .servicesContainer .card {
     background: rgba(162, 184, 193, 0.05);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* ?????????????????? */
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+
+    height: 50%;
+    width: 50%;
 }
 
 .servicesContainer .card-text {
@@ -218,12 +228,14 @@
     margin-left: 10%;
 }
 
+/* midle image size increased */
 .indsutriesImgs .industrymid {
     width: 460px;
     height: 460px;
     flex-shrink: 0;
 }
 
+/* icons */
 .indsutriesImgs>:nth-child(2),
 .indsutriesImgs>:nth-child(4) {
     width: 50px;
@@ -436,14 +448,6 @@
     letter-spacing: 0.1px;
 }
 
-/* form {
-    width: 100%;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-  } */
 #name,
 #email {
     display: flex;
@@ -542,12 +546,37 @@ p {
         display: none;
     }
 
-    .indsutriesImgs .industrymid {
-        width: 70%;
-        height: 70%;
-        padding-left: 28%;
+    .indsutriesImgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
+    .indsutriesImgs .industrymid {
+        width: 50%;
+        height: 50%;
+        padding: 2%;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1450px) {
+    .indsutriesImgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .indsutriesImgs .industrymid {
+        width: 50%;
+        height: 50%;
+        padding: 2%;
+    }
+
+    .indsutriesImgs>:nth-child(2) {
+        margin-left: 20%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1005px) {
@@ -561,6 +590,19 @@ p {
         font-family: Jost;
         font-size: 45px;
     }
+
+    .servicesContainer .card {
+        background: rgba(162, 184, 193, 0.05);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        /* ?????????????????? */
+        width: 169px;
+        height: 169px;
+        flex-shrink: 0;
+
+        height: 50%;
+        width: 50%;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -575,11 +617,28 @@ p {
         display: none;
     }
 
-    .indsutriesImgs .industrymid {
-        width: 70%;
+    .indsutriesImgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        height: 70%;
-        padding-left: 28%;
+    .indsutriesImgs .industrymid {
+        width: 50%;
+        height: 50%;
+        padding: 2%;
+    }
+
+    .servicesContainer .card {
+        background: rgba(162, 184, 193, 0.05);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        /* ?????????????????? */
+        width: 169px;
+        height: 169px;
+        flex-shrink: 0;
+
+        height: 50%;
+        width: 50%;
     }
 
     .servicesContainer button,
@@ -626,28 +685,12 @@ p {
         line-height: normal;
         letter-spacing: 0.2px;
     }
-   
+
 }
+
 @media (max-width: 767px) {
-    .mapImg{
+    .mapImg {
         display: none;
-    }
-}
-@media only screen and (min-width: 230px) and (max-width: 575px) {
-    .navContainer .btn-primary {
-        border-radius: 0;
-        padding: 10px 20px;
-        background-color: #CEA93A;
-        color: #FFF;
-        font-family: Jost;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 29px;
-        letter-spacing: 0.20000000298023224px;
-        width: 152px;
-        height: 52px;
-        top: 419px;
-        left: 15px;
     }
 }
 
@@ -681,4 +724,22 @@ p {
         letter-spacing: 0.2px;
     }
 
+}
+
+@media only screen and (min-width: 230px) and (max-width: 575px) {
+    .navContainer .btn-primary {
+        border-radius: 0;
+        padding: 10px 20px;
+        background-color: #CEA93A;
+        color: #FFF;
+        font-family: Jost;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0.20000000298023224px;
+        width: 152px;
+        height: 52px;
+        top: 419px;
+        left: 15px;
+    }
 }
