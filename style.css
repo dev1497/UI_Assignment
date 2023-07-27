@@ -121,7 +121,6 @@
 
 /* offerings heading text */
 .offeringHeading,
-.testimonialHeading,
 .blogHeading,
 .newsHeading,
 .featuredHeading,
@@ -136,6 +135,18 @@
     letter-spacing: 0.2px;
     padding-top: 4%;
     padding-bottom: 2%;
+}
+
+.testimonialHeading {
+    color: rgba(8, 26, 43, 0.75);
+    font-family: Jost;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    
 }
 
 .offerings h3 {
@@ -205,7 +216,6 @@
     height: 50%;
     width: 50%;
 }
-
 .servicesContainer .card-text {
     color: #081A2B;
     text-align: center;
@@ -380,14 +390,15 @@
     margin-bottom: 10px;
 }
 
+/* testimonials section */
+.card-group {
+    display: grid;
+}
+
 .clientContainer .card {
     background: rgba(255, 255, 255, 0.90);
     box-shadow: 0px 0px 10px 0px rgba(162, 184, 193, 0.50);
-    /* width: 400px;
-    height: 500px; */
-    width: 80%;
-    height: auto;
-    flex-shrink: 0;
+    height: 530px;
 }
 
 .small-round-image {
@@ -629,6 +640,7 @@ p {
         padding: 2%;
     }
 
+    /* offerings  */
     .servicesContainer .card {
         background: rgba(162, 184, 193, 0.05);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
