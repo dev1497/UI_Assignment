@@ -1,0 +1,87 @@
+.clientContainer .card-group {
+    display: grid;
+    grid-gap: 1rem;
+    width: 95%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 0 auto;
+}
+
+.clientContainer .card {
+    color: #081A2B;
+    text-align: center;
+    font-family: Jost;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0px 0px 10px 0px rgba(162, 184, 193, 0.50);
+    width: 400px;
+    height: 500px;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+}
+
+.image-container img {
+    /* max-width: 100%; */
+    /* height: auto; */
+    padding-top: 7%;
+    padding-left: 8%;
+}
+
+.clientContainer .card-text {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 9%;
+}
+.clientContainer .cardImg{
+    position: relative;
+}
+.small-round-image {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-bottom: 8%; 
+    justify-content: center; 
+   
+    position: absolute;
+    transform: translate(-50%, -50%); 
+}
+hr{
+    display: none;
+}
+.small-round-image2,
+.small-round-image3 {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    margin-bottom: 8%; 
+    justify-content: center; 
+
+    position: absolute;
+    transform: translate(-50%, -50%); 
+}
+.custom-bg {
+    background-image: url('resource/Rectangle\ 83.png');
+   background-size: cover;
+   background-position: bottom;
+   background-attachment: fixed; 
+
+}
+
+.clientContainer .card-text1 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+    text-align: center;
+    margin-top: 10%;
+}
