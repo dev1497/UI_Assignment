@@ -627,17 +627,20 @@ hr {
 .news .content p:first-child {
     color: #081A2B;
     font-family: Jost;
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: 2vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.2px;
+    margin-right: 1vw;
 }
 
 .news .content p:last-child {
     color: #081A2B;
     font-family: Jost;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 100;
     line-height: normal;
@@ -1509,11 +1512,12 @@ hr {
     }
 
     .news .content p:first-child {
-        font-size: 25px;
+        font-size: 3vw;
+        margin-right: 1vw;
     }
 
     .news .content p:last-child {
-        font-size: 20px;
+        font-size: 1.5vw;
     }
 
     .contactUs .formMap {
